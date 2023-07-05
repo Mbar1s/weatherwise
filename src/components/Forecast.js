@@ -33,8 +33,8 @@ export default function Forecast({
   return (
     <div>
       {outputWeather ? (
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  w-full lg:h-screen md:h-full  bg-no-repeat bg-cover bg-center bg-[#060047] text-[#B3005E]">
-          <div className="flex flex-col items-center border-2 border-[#E90064] justify-center">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  w-full lg:h-screen md:h-full  bg-no-repeat bg-cover bg-center bg-[#112D4E] text-[#EEEEEE]">
+          <div className="flex flex-col items-center border border-t-0 border-l-0 border-[#E90064] justify-center">
             <div className="flex flex-row gap-5">
               <h1 className="text-3xl font-bold">
                 {outputWeather.name} Now <br></br>
@@ -88,7 +88,7 @@ export default function Forecast({
             </div>
           </div>
           {outputForecast ? (
-            <div className="flex flex-col items-center border-2 border-[#E90064] justify-center">
+            <div className="flex flex-col items-center border border-t-0 border-[#E90064] justify-center">
               <div className="flex flex-row gap-5">
                 <h1 className="text-3xl font-bold">
                   {outputWeather.name} <br></br>
@@ -165,7 +165,7 @@ export default function Forecast({
             </div>
           ) : null}
           {outputForecast ? (
-            <div className="flex flex-col items-center border-2 border-[#E90064] justify-center">
+            <div className="flex flex-col items-center border border-t-0 border-r-0 border-[#E90064] justify-center">
               <div className="flex flex-row gap-5">
                 <h1 className="text-3xl font-bold">
                   {outputWeather.name} <br></br>
@@ -242,7 +242,7 @@ export default function Forecast({
             </div>
           ) : null}
           {outputForecast ? (
-            <div className="flex flex-col items-center border-2 border-[#E90064] justify-center">
+            <div className="flex flex-col items-center border border-t-0 border-l-0 border-[#E90064] justify-center">
               <div className="flex flex-row gap-5">
                 <h1 className="text-3xl font-bold">
                   {outputWeather.name} <br></br>
@@ -319,7 +319,7 @@ export default function Forecast({
             </div>
           ) : null}
           {outputForecast ? (
-            <div className="flex flex-col items-center border-2 border-[#E90064] justify-center">
+            <div className="flex flex-col items-center border border-t-0 border-[#E90064] justify-center">
               <div className="flex flex-row gap-5">
                 <h1 className="text-3xl font-bold">
                   {outputWeather.name} <br></br>
@@ -396,7 +396,7 @@ export default function Forecast({
             </div>
           ) : null}
           {outputForecast ? (
-            <div className="flex flex-col items-center border-2 border-[#E90064] justify-center">
+            <div className="flex flex-col items-center border border-t-0 border-r-0 border-[#E90064] justify-center">
               <div className="flex flex-row gap-5">
                 <h1 className="text-3xl font-bold">
                   {outputWeather.name} <br></br>

@@ -60,10 +60,10 @@ export default function Map(props) {
   }, [selectedCode, selectedCities]);
 
   return (
-    <div className="w-full h-screen bg-no-repeat bg-cover bg-center  text-[#B3005E] bg-[#E90064]">
+    <div className="w-full h-screen bg-no-repeat bg-cover bg-center  text-[#B3005E] bg-[#112D4E]">
       <label htmlFor="country-select"></label>
       <select
-        className="w-full text-3xl font-semibold text-center text-[#B3005E]  bg-[#060047]"
+        className="w-full text-3xl font-semibold text-center text-[#B3005E]  bg-[#252A34]"
         onChange={getCountryData}
         id="country-select"
       >
@@ -81,7 +81,7 @@ export default function Map(props) {
                 to={`/Detailed/${a.name}`}
                 state={{ cityInput: `${a.name}` }}
               >
-                <div className=" p-10 gap-2 flex flex-col items-center border-2 border-[#E90064] bg-[#060047] text-[#B3005E] justify-center">
+                <div className=" p-10 gap-2 flex flex-col items-center border-2 border-[#E90064] bg-[#112D4E] text-[#B3005E] justify-center">
                   <h1 className="text-bold text-3xl">
                     {selectedCode === a.sys.country && a.name !== `""`
                       ? a.name
